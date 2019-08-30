@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Image classifier</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        button{
+            color: brown;
+            background-color: coral;
+            alignment: center;
+            width: 20.0%;
+
+        }
+
+
+
+    </style>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+<div id="console"></div>
+<!-- Add an image that we will use to test -->
+<video autoplay playsinline muted id="webcam" width="550" height="550" ></video>
+<!-- Load index.js after the content of the page -->
+<br><br>
+<button id="class-a">Add A</button>
+<button id="class-b">Add B</button> <br><br>
+<button id="class-c">Add C</button>
+<button id="class-d">Add D</button>
+<script src="index.js"></script>
+</body>
+</html>
